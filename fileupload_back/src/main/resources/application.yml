@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: mysql:jdbc://localhost:3306/pymysql_study
+    username: root
+    password: zkzk0209
+
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+      enabled: true
+
+mybatis:
+  mapper-location:
+    -/mappers/*.xml
+
+root:
+  path: C:/scy/upload/
